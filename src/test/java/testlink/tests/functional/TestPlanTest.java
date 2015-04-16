@@ -1,4 +1,4 @@
-package testlink.tests.functional;
+package testlink.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

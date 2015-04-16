@@ -3,21 +3,14 @@ package webdriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import utils.PropertyLoader;
 
-import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by c246T on 04.03.2015.
- */
+
 public class BrowserFactory {
 
     /* Browsers constants */

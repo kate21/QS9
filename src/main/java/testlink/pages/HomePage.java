@@ -12,10 +12,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class HomePage extends AbstractPage{
     private static final By version = By.xpath("//div[@class='menu_title']/span[contains(text(),'TestLink')]");
     private static final By logout = By.linkText("logout");
+    private static final By planManagement = By.linkText("Test Plan Management");
 
     public HomePage(WebDriver driver)
     {
         super(driver);
+    }
+
+    public TestPlanManagementPage openTestPlanManagement(){
+        switchToMainFrame();
+        driver.findElement(planManagement).click();
+        return new TestPlanManagementPage(driver);
     }
 
     public boolean isOpened(){
@@ -28,12 +35,4 @@ public class HomePage extends AbstractPage{
     public void logout(){
         driver.findElement(logout).click();
     }
-
-    public void openTestPlanManagement() {
-        driver.findElements(By.xpath("//*[@id=\"test_plan_mgmt_topics\"]/a[1]")).click();
-
-
-    }
-
-
 }

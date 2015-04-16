@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import testlink.models.TestSuite;
 
 /**
- * Created by 1 on 20.03.2015.
+ * Created by 1 on 08.04.2015.
  */
 public class SpecificationPage extends AbstractPage {
 

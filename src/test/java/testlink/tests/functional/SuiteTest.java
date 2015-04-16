@@ -3,18 +3,15 @@ package testlink.tests.functional;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import testlink.steps.TestSteps;
 import testlink.models.TestCase;
 import testlink.models.TestStep;
 import testlink.models.TestSuite;
-import testlink.pages.SpecificationPage;
-import testlink.steps.TestSteps;
+
 
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by viktozhu on 4/7/15.
- */
 public class SuiteTest extends TestSteps{
 
     @DataProvider

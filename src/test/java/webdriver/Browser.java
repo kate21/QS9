@@ -7,9 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by c246T on 25.02.2015.
- */
+
 public class Browser implements WebDriver, TakesScreenshot {
     public WebDriver driver;
 

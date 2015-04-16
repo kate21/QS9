@@ -2,7 +2,6 @@ package testlink.steps;
 
 import org.openqa.selenium.WebDriver;
 import testlink.models.TestSuite;
-import testlink.pages.HomePage;
 import testlink.pages.LoginPage;
 import testlink.pages.SpecificationPage;
 

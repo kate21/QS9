@@ -15,6 +15,9 @@ public class AbstractPage {
     private static final By mainFrame = By.name("mainframe");
     private static final By treeFrame = By.name("treeframe");
     private static final By workFrame = By.name("workframe");
+    private static final By iFrame = By.name("iframe");
+
+
 
     public AbstractPage(WebDriver driver){
         this.driver = driver;
@@ -38,6 +41,18 @@ public class AbstractPage {
         driver.switchTo().defaultContent();
         driver.switchTo().frame(driver.findElement(mainFrame));
         driver.switchTo().frame(driver.findElement(workFrame));
+    }
+    protected void switchToMainFrame(){
+        logger.info("Switch to main frame");
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame(driver.findElement(mainFrame));
+        driver.switchTo().frame(driver.findElement(mainFrame));
+    }
+    protected void switchToIFrame(){
+        logger.info("Switch to iframe");
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame(driver.findElement(mainFrame));
+        driver.switchTo().frame(driver.findElement(iFrame));
     }
 
 }

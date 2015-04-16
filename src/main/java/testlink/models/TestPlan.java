@@ -1,8 +1,5 @@
 package testlink.models;
 
-/**
- * Created by admin on 08.04.2015.
- */
 public class TestPlan {
     public String name = "TestPlanTest Plan 111";
     public String description = "TestPlanTest Plan - detailed high-quality plan.";
